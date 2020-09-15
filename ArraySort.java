@@ -23,8 +23,11 @@ public class ArraySort{
                 System.out.println("enter an array of characters");
                 System.out.println("--> " + charSort(scan.nextLine()));
             }
+            else {
+                System.out.println("integers or characters?")
+            }
             // output =
-            System.out.println("\n");
+            System.out.println("Do you wish to sort integers or characters? \n");
         }
     }
 
