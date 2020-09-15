@@ -1,3 +1,8 @@
+
+import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
+
 import java.util.*;
 
 
@@ -52,5 +57,10 @@ public class ArraySort{
 
     public static String charSort(String arr){
         return arr;
+    }
+
+    @Test
+    public void testIntSort(){
+        assertEquals("[1, 2, 3, 4, 5]", intSort("35142"));
     }
 }
