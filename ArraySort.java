@@ -2,7 +2,7 @@
 
 import java.util.*;
 
-// evan godberson
+
 //main class for sorted array project
 
 public class ArraySort{
