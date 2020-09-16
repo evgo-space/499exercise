@@ -1,10 +1,4 @@
 
-<<<<<<< HEAD
-import org.junit.Test;
-
-import static org.junit.Assert.assertEquals;
-=======
->>>>>>> character-sort
 
 import java.util.*;
 
@@ -59,15 +53,6 @@ public class ArraySort{
     }
 
     public static String charSort(String arr){
-<<<<<<< HEAD
-        return arr;
-    }
-
-    @Test
-    public void testIntSort(){
-        assertEquals("[1, 2, 3, 4, 5]", intSort("35142"));
-    }
-=======
 
         String[] str = new String[arr.length()];
         for(int i=0; i<arr.length(); i++){
@@ -79,5 +64,4 @@ public class ArraySort{
     }
 
 
->>>>>>> character-sort
 }
