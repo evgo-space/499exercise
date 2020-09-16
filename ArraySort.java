@@ -1,4 +1,10 @@
-import java.util.Scanner;
+
+import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
+
+import java.util.*;
+
 
 //main class for sorted array project
 
@@ -24,7 +30,7 @@ public class ArraySort{
                 System.out.println("--> " + charSort(scan.nextLine()));
             }
             else {
-                System.out.println("integers or characters?")
+                System.out.println("integers or characters?");
             }
             // output =
             System.out.println("Do you wish to sort integers or characters? \n");
@@ -32,10 +38,29 @@ public class ArraySort{
     }
 
     public static String intSort(String arr) {
-        return arr;
+        String[] str = new String[arr.length()];
+        int[] intArr = new int[arr.length()];
+        for(int i=0; i<arr.length(); i++){
+            str[i] = Character.toString(arr.charAt(i));
+        }
+        for(int i=0; i<arr.length(); i++){
+            try{
+            intArr[i]=Integer.parseInt(str[i]);
+            }
+            catch(NumberFormatException e){
+                System.out.println("error");
+            }
+        }
+        Arrays.sort(intArr);
+        return Arrays.toString(intArr);
     }
 
     public static String charSort(String arr){
         return arr;
+    }
+
+    @Test
+    public void testIntSort(){
+        assertEquals("[1, 2, 3, 4, 5]", intSort("35142"));
     }
 }
